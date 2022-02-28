@@ -135,13 +135,13 @@ if ($config.Config.OEMInfo)
 }
 
 # STEP 13: Enable UE-V
-Write-Host "Enabling UE-V"
-Enable-UEV
-Set-UevConfiguration -Computer -SettingsStoragePath "%OneDriveCommercial%\UEV" -SyncMethod External -DisableWaitForSyncOnLogon
-Get-ChildItem "$($installFolder)UEV" -Filter *.xml | % {
-	Write-Host "Registering template: $($_.FullName)"
-	Register-UevTemplate -Path $_.FullName
-}
+#Write-Host "Enabling UE-V"
+#Enable-UEV
+#Set-UevConfiguration -Computer -SettingsStoragePath "%OneDriveCommercial%\UEV" -SyncMethod External -DisableWaitForSyncOnLogon
+#Get-ChildItem "$($installFolder)UEV" -Filter *.xml | % {
+#	Write-Host "Registering template: $($_.FullName)"
+#	Register-UevTemplate -Path $_.FullName
+#}
 
 # STEP 14: Disable network location fly-out
 Write-Host "Turning off network location fly-out"
