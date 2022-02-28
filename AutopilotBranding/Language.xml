@@ -6,7 +6,7 @@
 
     <!--Display Language--> 
     <gs:MUILanguagePreferences> 
-        <gs:MUILanguage Value="es-ES" /> 
+        <gs:MUILanguage Value="en-GB" /> 
         <gs:MUIFallback Value="en-US" /> 
     </gs:MUILanguagePreferences> 
 
